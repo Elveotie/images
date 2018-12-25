@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="200" height="100" viewBox="0 0 20 10">
+    <rect x="0" y="0" width="200" height="100" fill="white" />
     <g id="bandes" fill="crimson">
         <rect x="0" y="0" width="20" height="2" />
         <rect x="0" y="8" width="20" height="2" />
