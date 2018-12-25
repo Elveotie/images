@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<svg width="200" height="100" viewBox="0 0 20 10">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="200" height="100" viewBox="0 0 20 10">
     <g id="bandes" fill="crimson">
         <rect x="0" y="0" width="20" height="2" />
         <rect x="0" y="8" width="20" height="2" />
     </g>
-    
     <g id="blason">
         <rect x="8" y="3" width="4" height="4" fill="crimson" />
-        
         <g id="croix" fill="white">
             <path d="M 8 3 L 9 3 L 12 6 L 12 7 L 11 7 L 8 4 Z" />
             <path d="M 12 3 L 12 4 L 9 7 L 8 7 L 8 6 L 11 3 Z" />
