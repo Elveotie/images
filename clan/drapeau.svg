@@ -8,8 +8,8 @@
     <g id="blason">
         <rect x="8" y="3" width="4" height="4" fill="crimson" />
         <g id="croix" fill="white">
-            <path d="M 8 3 L 9 3 L 12 6 L 12 7 L 11 7 L 8 4 Z" />
-            <path d="M 12 3 L 12 4 L 9 7 L 8 7 L 8 6 L 11 3 Z" />
+            <path d="M 8.125 3.125 h 0.75 l 3 3 v 0.75 h -0.75 l -3 -3 Z" />
+            <path d="M 11.875 3.125 v 0.75 l -3 3 h -0.75 v -0.75 l 3 -3 Z" />
         </g>
     </g>
 </svg>
