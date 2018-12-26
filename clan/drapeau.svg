@@ -1,15 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="200" height="100" viewBox="0 0 20 10">
     <rect x="0" y="0" width="200" height="100" fill="white" />
-    <g id="bandes" fill="crimson">
+
+    <g id="strips" fill="crimson">
         <rect x="0" y="0" width="20" height="2" />
         <rect x="0" y="8" width="20" height="2" />
     </g>
-    <g id="blason">
+
+    <g id="cross">
         <rect x="8" y="3" width="4" height="4" fill="crimson" />
-        <g id="croix" fill="white">
-            <path d="M 8.125 3.125 h 0.75 l 3 3 v 0.75 h -0.75 l -3 -3 Z" />
-            <path d="M 11.875 3.125 v 0.75 l -3 3 h -0.75 v -0.75 l 3 -3 Z" />
-        </g>
+        <path fill="white" />
     </g>
+
+    <script>
+        function cross_path(x, y, w, h, d) {
+            const c = d * Math.sqrt(2) / 2;
+            return `M ${x} ${y} h ${c} l ${w/2-c} ${h/2-c} l ${w/2-c} ${-h/2+c}
+                    h ${c} v${c} l ${-w/2+c} ${h/2-c} l ${w/2-c} ${h/2-c}
+                    v ${c} h ${-c} l ${-w/2+c} ${-h/2+c} l ${-w/2+c} ${h/2-c}
+                    h ${-c} v ${-c} l ${w/2-c} ${-h/2+c} l ${-w/2+c} ${-h/2+c}
+                    Z`;
+        }
+
+        const path = document.querySelector('#cross path'),
+              p = 1.61803398875/10;
+        
+        path.setAttribute('d', cross_path(8+p, 3+p, 4-2*p, 4-2*p, 1));
+    </script>
 </svg>
